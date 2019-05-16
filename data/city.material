@@ -1,0 +1,196 @@
+material edgeGraphMaterial
+{
+	technique
+	{
+		pass
+		{
+			lighting on
+			diffuse  0 0 0
+			ambient  1 0 0			
+		}
+	}
+}
+
+material lineGraphMaterial
+{
+	technique
+	{
+		pass
+		{
+			lighting on
+			diffuse  0 0 0
+			ambient  0.0 0.63 0.27
+		}
+	}
+}
+
+material axesMaterial
+{
+	technique
+	{
+		pass
+		{
+			lighting on
+			diffuse  0 0 0
+			ambient  0.1 0.34 0.91
+		}
+	}
+}
+
+material debugDataMaterial
+{
+	technique
+	{
+		pass
+		{
+			lighting on
+			diffuse  0 0 0
+			ambient  1 0.94 0.21
+		}
+	}
+}
+
+material sidewalkMaterial
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 1 1 1
+			
+			texture_unit
+			{
+				texture sidewalk1.jpg
+			}
+		}
+	}
+}
+
+material cellGeometryMaterial
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 1 1 1
+			
+			texture_unit
+			{
+				texture cellGeometry1.jpg
+			}			
+		}
+	}
+}
+
+material cellParkMaterial
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 1 1 1
+			
+			texture_unit
+			{
+				texture parkGeometry1.jpg	
+			}
+		}
+	}
+}
+
+material fenceMaterial
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 1 1 1
+			scene_blend alpha_blend
+			depth_write off
+			cull_hardware none
+			fog_override none
+			
+			texture_unit
+			{
+				texture fence1.png				
+			}		
+		}
+	}
+}
+
+material gateMaterial
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 1 1 1
+			scene_blend alpha_blend
+			depth_write off
+			cull_hardware none
+			//fog_override none
+			
+			texture_unit
+			{
+				texture gate1.png				
+			}		
+		}
+	}
+}
+
+material road1Material
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 1 1 1
+			
+			texture_unit
+			{
+				texture road3.jpg
+			}
+		}
+	}
+}
+
+material gridMaterial
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 1 1 1
+			
+			texture_unit
+			{
+				texture gridTile.jpg
+			}
+		}
+	}
+}
+
+material sky1Material
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			
+			texture_unit
+			{
+				cubic_texture sky1.bmp separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
